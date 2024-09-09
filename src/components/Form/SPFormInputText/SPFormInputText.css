@@ -1,0 +1,50 @@
+.sp_form_input_text {
+    --transition: 0.2s ease-out;
+    --font-family: 'Times New Roman', -apple-system, sans-serif;
+
+    --label-margin-left: 0.25rem;
+    --label-font-size: 0.95em;
+    --label-font-weight: bold;
+    --label-text-color: #FFFFFF;
+
+    --input-margin: 0.25rem 0 0 0;
+    --input-padding: 0.375rem 0.625rem;
+    --input-font-size: 1em;
+    --input-border: 0.125rem solid #D3D3D3;
+    --input-focus-border: 0.125rem solid var(--color-primary);
+    --input-focus-box-shadow: 0px 0px 4px 1px var(--color-primary);
+    --input-border-radius: 0.3rem;
+}
+
+.sp_form_input_text {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    max-width: 25rem;
+    font-family: var(--font-family);
+}
+
+.sp_form_input_text label {
+    margin-left: var(--label-margin-left);
+    font-size: var(--label-font-size);
+    font-weight: var(--label-font-weight);
+    color: var(--label-text-color);
+    user-select: none;
+}
+
+.sp_form_input_text input {
+    width: 100%;
+    outline: none;
+    margin: var(--input-margin);
+    padding: var(--input-padding);
+    font-size: var(--input-font-size);
+    border: var(--input-border);
+    border-radius: var(--input-border-radius);
+    transition: var(--transition);
+}
+
+.sp_form_input_text input:focus {
+    outline: 0;
+    border: var(--input-focus-border);
+    box-shadow: var(--input-focus-box-shadow);
+}

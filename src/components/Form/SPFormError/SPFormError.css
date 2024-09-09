@@ -1,0 +1,15 @@
+.sp_form_error {
+    --error-height: 1.15rem;
+    --error-margin: 0 0 0 0.25rem;
+    --error-font-size: 11px;
+    --error-font-weight: bold;
+    --error-color: #F71B2F;
+}
+
+.sp_form_error {
+    min-height: var(--error-height);
+    margin: var(--error-margin);
+    font-size: var(--error-font-size);
+    font-weight: var(--error-font-weight);
+    color: var(--error-color);
+}

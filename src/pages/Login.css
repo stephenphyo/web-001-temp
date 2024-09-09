@@ -1,0 +1,95 @@
+.login {
+    --font-normal: 14px;
+    --font-small: 12px;
+    --color-text-button: #FFFFFF;
+}
+
+.login_sub {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: var(--font-small);
+}
+
+.login_sub #remember {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.login_sub #remember>input[type='checkbox'] {
+    cursor: pointer;
+}
+
+.login_sub #forgot {
+    display: flex;
+    margin-left: auto;
+    color: var(--color-text-primary);
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.login_sub #forgot:hover {
+    color: var(--color-primary);
+}
+
+.login_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.75rem;
+    font-size: var(--font-small);
+    color: var(--color-text-primary);
+    gap: 0.5rem;
+}
+
+.login_footer #register {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.login_footer #register:hover {
+    color: var(--color-primary);
+}
+
+.login_separator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 2rem;
+    margin-top: 0.75rem;
+    gap: 1.5rem;
+}
+
+.login_separator hr {
+    width: 5rem;
+    height: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.login_options {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.login_options img {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+#google {
+    color: var(--color-text-button);
+    background-color: #DB4437;
+}
+
+#facebook {
+    color: var(--color-text-button);
+    background-color: #1877F2;
+}
+
+#instagram {
+    color: var(--color-text-button);
+    background-color: #E4405F;
+}

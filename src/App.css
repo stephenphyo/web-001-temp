@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root {
+    --app-header-height: 60px;
+
+    --font-primary: 'sans-serif';
+    --font-size: 14px;
+
+    --color-primary: #FC4000;
+    --color-secondary: cyan;
+    --color-background: #F5F5F5;
+    --color-text-primary: #FFFFFF;
+    --color-text-secondary: #000000;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    min-width: 100dvw;
+    min-height: 100dvh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-primary);
+    font-size: var(--font-size);
+    color: var(--color-text-primary);
+    overflow: hidden;
+}
+
+.app {
+    background: url('../public/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.625rem;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.7);
+}
